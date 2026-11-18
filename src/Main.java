@@ -9,8 +9,11 @@ public class Main {
         System.out.println("Andet udlaan lykkes: " + book.borrow());
         System.out.println("Udlaant efter andet forsoeg: " + book.isBorrowed());
 
-        book.returnBook();
-        System.out.println("Udlaant efter aflevering: " + book.isBorrowed());
+        System.out.println("Foerste aflevering lykkes: " + book.returnBook());
+        System.out.println("Udlaant efter foerste aflevering: " + book.isBorrowed());
+
+        System.out.println("Anden aflevering lykkes: " + book.returnBook());
+        System.out.println("Udlaant efter anden aflevering: " + book.isBorrowed());
 
         System.out.println("Nyt udlaan lykkes: " + book.borrow());
         System.out.println("Udlaant efter nyt udlaan: " + book.isBorrowed());
